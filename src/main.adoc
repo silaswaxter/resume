@@ -1,0 +1,107 @@
+:doctype: article
+
+= Silas Waxter
+
+[.text-center]
+541-286-0836 | silaswaxter@gmail.com |
+https://github.com/SilasWaxter[github.com/SilasWaxter]
+
+[.text-left]
+== Education
+'''
+[cols="<,>"]
+|===
+h| Oregon State University 
+h| June 2024
+
+e| Bachelor of Science, Electrical and Computer Engineering
+e| GPA: 3.52/4.00
+|===
+
+== Skills
+'''
+[cols="15,85"]
+|===
+| Software
+| C, Python, Bash, Git, GNU toolchain, Make, Bazel, Docker, Asciidoc, Markdown, KiCad
+
+| Practices
+| Test-Driven Development, Docs-as-Code, Infrastructure-as-Code
+
+| Tools
+| Logic Analyzer, Oscilloscope, Function Generator, DMM, 3D printer
+
+| Peripherals
+| I2C, UART, DMA, Arm NVIC
+|===
+
+== Experience
+'''
+[cols="<,>"]
+|===
+h| METER Group Inc 
+h| June 2022 -- Sept. 2022
+
+e| Firmware Engineering Intern 
+e| Pullman, Washington
+
+2+a|
+* Created hardware-in-the-loop continuous integration for the AquaLab3 product
+* Developed cross-platform python package used by firmware and software teams 
+  which standardizes device serial communication for METER devices
+* Refined AquaLab3 serial commands spreadsheet ensuring correctness and 
+  parsability
+* Increased AquaLab3 robustness by reporting 10 firmware bugs which were 
+  patched in subsequent revisions
+* Researched, documented, incorporated, and improved python practices regarding
+  packaging, dependency management, and automated testing
+
+h| Unimeasure Inc
+h| July 2021 -- Sept. 2021
+
+e| Electro-Mechanical Assembly Intern 
+e| Corvallis, Oregon
+
+2+a|
+* Produced various sub-assemblies for position transducer products using a 
+  drill press, manual press, and soldering station
+* Followed quality control, inventory, and assembly-instruction processes
+|===
+
+== Relevant Projects
+'''
+[cols="<,>"]
+|===
+h| Range of Motion Device
+h| August 2018 -- Current
+
+2+e| 
+Measure a human-patient's joint’s range of motion using two interial 
+measurement unit sensors.
+
+2+a|
+* Wrote a Hardware Abstraction Layer for the peripherals of the STM32L4 
+  microcontroller
+* Developed prototype user interface which displayed data stream from each
+  sensor and control wireless pairing process
+* Awarded scholarship to Oregon State University for presentation of prototype
+  at Northwest Science Expo
+
+h| Automated Mycelium Fruiting Chamber
+h| July 2020 -- Sept. 2020
+
+2+e| 
+Optimize mushroom growth by controlling environmental factors such as humidity
+
+2+a|
+* Wrote a Hardware Abstraction Layer for the peripherals of the STM32L4 
+  microcontroller.
+* Developed prototype user interface which displayed data stream from each
+  sensor and control wireless pairing process
+* Awarded scholarship to Oregon State University for presentation of prototype
+  at Northwest Science Expo
+
+|===
+
+<<<
+include::portfolio.adoc[]

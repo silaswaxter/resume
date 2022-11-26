@@ -1,0 +1,29 @@
+== Portfolio
+
+__An expanded, detailed project list__
+
+
+== Range of motion device prototype
+
+
+== Linux Keyboard-Driven Configuration
+
+* **INSERT PROFESSIONAL VIDEO OF LINUX TOUR**
+* Invested in long-term efficiency of context-switching, window management, 
+  code editing, and internet browsing
+
+
+== https://github.com/silaswaxter/schedule[Daily Schedule]
+
+* **INSERT IMAGES OF SCHDULE**
+* Implemented docs-as-code and infrastructure-as-code principles
+** Anne Gentle’s “Docs Like Code”
+** Christopher Gales’ “The Product Is Docs”
+* Format and layout information encoded in plain-text configuration files 
+  tracked by version control system
+* Single source of truth for repeated content
+* Uses git, make, docker, asciidoctor, asciidoc, bash scripting, and psutils
+
+
+
+
