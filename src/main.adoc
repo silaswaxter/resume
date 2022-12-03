@@ -18,23 +18,6 @@ e| Bachelor of Science, Electrical and Computer Engineering
 e| GPA: 3.52/4.00
 |===
 
-== Skills
-'''
-[cols="15,85"]
-|===
-| Software
-| C, Python, Bash, Git, GNU toolchain, Make, Bazel, Docker, Asciidoc, Markdown, KiCad
-
-| Practices
-| Test-Driven Development, Docs-as-Code, Infrastructure-as-Code
-
-| Tools
-| Logic Analyzer, Oscilloscope, Function Generator, DMM, 3D printer
-
-| Peripherals
-| I2C, UART, DMA, Arm NVIC
-|===
-
 == Experience
 '''
 [cols="<,>"]
@@ -68,7 +51,7 @@ e| Corvallis, Oregon
 * Followed quality control, inventory, and assembly-instruction processes
 |===
 
-== Relevant Projects
+== Projects
 '''
 [cols="<,>"]
 |===
@@ -94,14 +77,32 @@ h| July 2020 -- Sept. 2020
 Optimize mushroom growth by controlling environmental factors such as humidity
 
 2+a|
-* Wrote a Hardware Abstraction Layer for the peripherals of the STM32L4 
-  microcontroller.
-* Developed prototype user interface which displayed data stream from each
-  sensor and control wireless pairing process
-* Awarded scholarship to Oregon State University for presentation of prototype
-  at Northwest Science Expo
+//* Created a Hardware Abstraction Layer for the peripherals of the STM32L4 
+//  microcontroller
+* Developed prototype user interface that displays the data stream from each
+  sensor and controls the wireless pairing process
+* Received Oregon State University scholarship for prototype presentation at
+  the Northwest Science Expo
 
 |===
 
+== Skills
+'''
+[cols="15,85"]
+|===
+| Software
+| C, Python, Bash, Git, GNU toolchain, Make, Bazel, Docker, Asciidoc, Markdown, KiCad
+
+| Practices
+| Test-Driven Development, Docs-as-Code, Infrastructure-as-Code
+
+| Tools
+| Logic Analyzer, Oscilloscope, Function Generator, Multimeter, 3D printer
+
+| Peripherals
+| I2C, UART, DMA, Arm NVIC
+|===
+
 <<<
+
 include::portfolio.adoc[]
