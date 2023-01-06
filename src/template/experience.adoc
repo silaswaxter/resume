@@ -1,0 +1,14 @@
+//:experience-organization-name:
+//:experience-duration:
+//:experience-job-title:
+//:experience-job-location:
+
+[cols="<,>"]
+|===
+h| {experience-organization-name}
+h| {experience-duration}
+
+e| {experience-job-title}
+e| {experience-job-location}
+|===
+

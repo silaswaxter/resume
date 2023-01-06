@@ -1,97 +1,85 @@
 :doctype: article
+:imagesdir: ../images/
 
-= Silas Waxter
+== Silas Waxter
 
 [.text-center]
 541-286-0836 | silaswaxter@gmail.com |
 https://github.com/SilasWaxter[github.com/SilasWaxter]
 
 [.text-left]
-== Education
+=== Education
 '''
 [cols="<,>"]
 |===
 h| Oregon State University 
 h| June 2024
 
-e| Bachelor of Science, Electrical and Computer Engineering
-e| GPA: 3.52/4.00
+e| Electrical and Computer Engineering, Bachelor of Science +
+   Computer Science, Minor
+e| GPA: 3.66/4.00
 |===
 
-== Experience
+=== Experience
 '''
-[cols="<,>"]
-|===
-h| METER Group Inc 
-h| June 2022 -- Sept. 2022
-
-e| Firmware Engineering Intern 
-e| Pullman, Washington
-
-2+a|
-* Created hardware-in-the-loop continuous integration for the AquaLab3 product
-* Developed cross-platform python package used by firmware and software teams 
-  which standardizes device serial communication for METER devices
-* Refined AquaLab3 serial commands spreadsheet ensuring correctness and 
-  parsability
-* Increased AquaLab3 robustness by reporting 10 firmware bugs which were 
-  patched in subsequent revisions
-* Researched, documented, incorporated, and improved python practices regarding
+:experience-organization-name: METER Group Inc
+:experience-duration: June 2022 -- Sept. 2022
+:experience-job-title: Firmware Engineering Intern
+:experience-job-location: Pullman, Washington
+include::template/experience.adoc[]
+* Created a hardware-in-the-loop continuous integration system for the AquaLab3
+  product
+* Refactored AquaLab3 serial commands spreadsheet ensuring correctness and parsability
+* Discovered and reported 10 bugs for the AquaLab3 device
+* Developed a python package for Windows and Linux that abstracts serial communication   with METER devices and is used by both firmware and high-level software teams 
+* Researched, documented, and incorporated best practices and tools for python 
   packaging, dependency management, and automated testing
 
-h| Unimeasure Inc
-h| July 2021 -- Sept. 2021
+:experience-organization-name: Unimeasure Inc
+:experience-duration: July 2021 -- Sept. 2021
+:experience-job-title: Electro-mechanical Assembly Intern
+:experience-job-location: Corvallis, Oregon
+include::template/experience.adoc[]
+* Operated drill press, manual press, and soldering station to produce sub-assemblies
+* Practiced quality control and inventory management processes. 
 
-e| Electro-Mechanical Assembly Intern 
-e| Corvallis, Oregon
-
-2+a|
-* Produced various sub-assemblies for position transducer products using a 
-  drill press, manual press, and soldering station
-* Followed quality control, inventory, and assembly-instruction processes
-|===
-
-== Projects
+=== Highlighted Projects
 '''
-[cols="<,>"]
-|===
-h| Range of Motion Device
-h| August 2018 -- Current
+:project-name: Range of Motion Device
+:project-duration: August 2018 -- Current
+:project-description: Designed for use by medical professionals such as \
+chiropractors and physical therapists, the device measures the range of \
+motion of a human's joint using two inertial measurement unit sensors.
+include::template/project-brief.adoc[]
+* Developed a custom Hardware Abstraction Layer for the Arm Cortex M4-based 
+  STM32L4 microcontroller 
+* Created a user interface with Windows Forms which displays each sensor's data and manages sensor pairing
+* Awarded a scholarship to OSU for presentation of prototype at Northwest Science Expo
 
-2+e| 
-Measure a human-patient's joint’s range of motion using two interial 
-measurement unit sensors.
+:project-name: Automated Mycelium Fruiting Chamber
+:project-duration: July 2020 -- Sept. 2020
+:project-description: Reduce time spent maintaining the mushroom growth \
+environment by controlling humidity. 
+include::template/project-brief.adoc[]
+* Leveraged existing libraries and Arduino framework to deliver a proof-of-concept in 2 weeks
+* Designed a gravity-fed, water-level-controlled humidifier reservoir using a 
+  solenoid, float switch, and 3D-printed housing
 
-2+a|
-* Wrote a Hardware Abstraction Layer for the peripherals of the STM32L4 
-  microcontroller
-* Developed prototype user interface which displayed data stream from each
-  sensor and control wireless pairing process
-* Awarded scholarship to Oregon State University for presentation of prototype
-  at Northwest Science Expo
+:project-name: https://www.linkedin.com/posts/silas-waxter_assembly-game-project-activity-7004541275643289600-cbPb?utm_source=share&utm_medium=member_desktop[Rock-Paper-Scissors Game]
+:project-duration: December 2020
+:project-description: Implemented a two-player, two-device Rock-Paper-Scissors game \
+in AVR assembly
+include::template/project-brief.adoc[]
+* Configured interrupts, UART, GPIO, and timers
+* Architected firmware as finite state machines with synchronized state transitions via UART communication
 
-h| Automated Mycelium Fruiting Chamber
-h| July 2020 -- Sept. 2020
-
-2+e| 
-Optimize mushroom growth by controlling environmental factors such as humidity
-
-2+a|
-//* Created a Hardware Abstraction Layer for the peripherals of the STM32L4 
-//  microcontroller
-* Developed prototype user interface that displays the data stream from each
-  sensor and controls the wireless pairing process
-* Received Oregon State University scholarship for prototype presentation at
-  the Northwest Science Expo
-
-|===
-
-== Skills
+=== Skills
 '''
 [cols="15,85"]
 |===
 | Software
-| C, Python, Bash, Git, GNU toolchain, Make, Bazel, Docker, Asciidoc, Markdown, KiCad
+| C, Python, Bash, Git, GNU toolchain, Make, Bazel, Docker, Linux, KiCad, 
+  Markdown, Asciidoc
 
 | Practices
 | Test-Driven Development, Docs-as-Code, Infrastructure-as-Code
@@ -100,9 +88,9 @@ Optimize mushroom growth by controlling environmental factors such as humidity
 | Logic Analyzer, Oscilloscope, Function Generator, Multimeter, 3D printer
 
 | Peripherals
-| I2C, UART, DMA, Arm NVIC
+| I2C, UART, DMA, Nested Interrupt Vector Controller, GPIO, PWM, Timers
 |===
 
 <<<
 
-include::portfolio.adoc[]
+//include::portfolio.adoc[]

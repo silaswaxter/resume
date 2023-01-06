@@ -1,7 +1,7 @@
 build_dir := build
 src_dir := src
 
-document_name := resume-portfolio-silas-waxter
+document_name := resume-silas-waxter
 
 theme := ./theme.yml
 
@@ -13,8 +13,11 @@ $(build_dir)/$(document_name).pdf: $(src_dir)/main.adoc $(document_src) $(theme)
 	docker run -v $(shell pwd):/documents/ \
 		--rm \
 		asciidoctor/docker-asciidoctor \
-		asciidoctor-pdf $< \
-		--theme $(theme) -o $@
+		asciidoctor-pdf \
+		-a allow-uri-read \
+		$< \
+		--theme $(theme) \
+		-o $@
 
 clean:
 	rm -rf $(build_dir)/*
