@@ -1,8 +1,14 @@
-extends: default
+extends: default-sans
+
 page:
   layout: portrait
   margin: [0.25in, 0.25in, 0.25in, 0.25in]
   size: [8.5in, 11in]
+
+base:
+  # default alignment for lists is justified which looks gross because spaces
+  # noticeably change sizes
+  text-align: left
 
 heading:
   h2-font-size: 20
