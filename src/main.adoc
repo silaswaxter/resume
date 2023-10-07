@@ -17,10 +17,28 @@ h| June 2024
 
 e| Electrical and Computer Engineering, Bachelor of Science +
    Computer Science, Minor
-e| GPA: 3.66/4.00
+e| GPA: 3.60/4.00
 |===
 
-=== Experience
+=== Skills
+'''
+[cols="15,85"]
+|===
+| Software
+| C, C++, Python, Lua, Bash, Git, Gitlab CI, Markdown, Make, Bazel, Docker,
+  Linux, KiCad, Inventor
+
+| Practices
+| Test-Driven Development, Continuous Integration, Docs-as-Code
+
+| Tools
+| Logic Analyzer, Oscilloscope, Function Generator, Multimeter
+
+| Peripherals
+| I2C, UART, DMA, Nested Interrupt Vector Controller, GPIO, PWM, Timers
+|===
+
+=== Work Experience
 '''
 :experience-organization-name: METER Group Inc
 :experience-duration: June 2022 -- Sept. 2022
@@ -29,67 +47,58 @@ e| GPA: 3.66/4.00
 include::template/experience.adoc[]
 * Created a hardware-in-the-loop continuous integration system for the AquaLab3
   product
-* Refactored AquaLab3 serial commands spreadsheet ensuring correctness and parsability
-* Discovered and reported 10 bugs for the AquaLab3 device
-* Developed a python package for Windows and Linux that abstracts serial communication   with METER devices and is used by both firmware and high-level software teams 
-* Researched, documented, and incorporated best practices and tools for python 
-  packaging, dependency management, and automated testing
+* Wrote a smoke-test for the AquaLab3 HIL CI which exercises the serial firmware 
+  update, a subset of the command-line interface, and checks for expected device
+  state
+* Developed an internal serial-abstraction library for Windows and Unix that 
+  supports python v2.7+
+* Refactored the AquaLab3 CLI documentation ensuring correctness and applying 
+  git styled documentation enabling parsability
 
 :experience-organization-name: Unimeasure Inc
 :experience-duration: July 2021 -- Sept. 2021
 :experience-job-title: Electro-mechanical Assembly Intern
 :experience-job-location: Corvallis, Oregon
 include::template/experience.adoc[]
-* Operated drill press, manual press, and soldering station to produce sub-assemblies
-* Practiced quality control and inventory management processes. 
+* Operated soldering-station, drill-press, and mill to produce components for
+  string linear potentiometers
 
 === Highlighted Projects
 '''
-:project-name: Range of Motion Device
+:project-name: https://hackaday.io/project/175513-range-of-motion-device-prototype[Range of Motion Device]
 :project-duration: August 2018 -- Current
-:project-description: Designed for use by medical professionals such as \
-chiropractors and physical therapists, the device measures the range of \
-motion of a human's joint using two inertial measurement unit sensors.
+:project-description: Digitally measure the flexibility of human's joint
 include::template/project-brief.adoc[]
 * Developed a custom Hardware Abstraction Layer for the Arm Cortex M4-based 
-  STM32L4 microcontroller 
-* Created a user interface with Windows Forms which displays each sensor's data and manages sensor pairing
-* Awarded a scholarship to OSU for presentation of prototype at Northwest Science Expo
+  STM32L4 microcontroller
+* Created a Windows Forms user interface that pairs sensors, shares the 
+  symmetric encryption key, and displays sensors' orientations
 
-:project-name: Automated Mycelium Fruiting Chamber
-:project-duration: July 2020 -- Sept. 2020
-:project-description: Reduce time spent maintaining the mushroom growth \
-environment by controlling humidity. 
+:project-name: https://cad.onshape.com/documents/6ce85bad0ae8b58c787d039d/w/dbb51ba1a67891031b16cbac/e/1fd8eec701eb8102974f099d?renderMode=0&uiState=652061af4adcbf5840a34947[SCARA Arm Drawing Robot]
+:project-duration: Spring 2023
+:project-description: A custom robotic arm draws with various utensils based \
+on received commands (for junior design)
 include::template/project-brief.adoc[]
-* Leveraged existing libraries and Arduino framework to deliver a proof-of-concept in 2 weeks
-* Designed a gravity-fed, water-level-controlled humidifier reservoir using a 
-  solenoid, float switch, and 3D-printed housing
+* Implemented a PID motor controller, timer-based encoder driver, PWM motor 
+  driver
+* Wrote a publish-subscribe interrupt abstraction service allowing drivers to 
+  follow separation of concerns
+* Designed the arm in CAD and created mechanical drawings for fabrication
 
 :project-name: https://www.linkedin.com/posts/silas-waxter_assembly-game-project-activity-7004541275643289600-cbPb?utm_source=share&utm_medium=member_desktop[Rock-Paper-Scissors Game]
-:project-duration: December 2020
-:project-description: Implemented a two-player, two-device Rock-Paper-Scissors game \
-in AVR assembly
+:project-duration: December 2023
+:project-description: An AVR assembly rock-paper-scissors program that runs on \
+two devices 
 include::template/project-brief.adoc[]
-* Configured interrupts, UART, GPIO, and timers
-* Architected firmware as finite state machines with synchronized state transitions via UART communication
+* Architected firmware as finite state machines with synchronized state 
+  transitions via UART communication
+* Configured UART, GPIO, timer peripherals
 
-=== Skills
-'''
-[cols="15,85"]
-|===
-| Software
-| C, Python, Bash, Git, GNU toolchain, Make, Bazel, Docker, Linux, KiCad, 
-  Markdown, Asciidoc
-
-| Practices
-| Test-Driven Development, Docs-as-Code, Infrastructure-as-Code
-
-| Tools
-| Logic Analyzer, Oscilloscope, Function Generator, Multimeter, 3D printer
-
-| Peripherals
-| I2C, UART, DMA, Nested Interrupt Vector Controller, GPIO, PWM, Timers
-|===
+:project-name: https://hackaday.io/project/175998-automated-mushroom-fruiting-container[Automated Mycelium Fruiting Chamber]
+:project-duration: July 2020 -- Sept. 2020
+:project-description: 
+include::template/project-brief.adoc[]
+* Implemented bang-bang control system to regulate the growing chamber humidity
 
 <<<
 
