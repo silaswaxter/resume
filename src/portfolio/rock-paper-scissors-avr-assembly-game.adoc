@@ -1,0 +1,14 @@
+:project-name: https://www.linkedin.com/feed/update/urn:li:activity:7004541275643289600/[Rock \
+Paper Scissors AVR Assembly Game]
+:project-duration: November 2022
+:project-description: A game of rock, paper, scissors between two AVR \
+microcontrollers which communicate over UART and run a finite state machine.
+include::../template/project-brief.adoc[]
+[cols="<,>"]
+|===
+a| image::rock-paper-scissors-avr-assembly.jpg[pdfwidth=35vw]
+// TODO
+a| {empty}
+//[.text-left]
+//* 
+|===

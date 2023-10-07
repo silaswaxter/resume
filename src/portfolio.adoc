@@ -1,29 +1,21 @@
-== Portfolio
+== Project Portfolio
 
-__An expanded, detailed project list__
+[.text-center]
+__More details. More projects. Include images.__
+[.text-left]
 
+=== Range of Motion Device
+asdf
 
-== Range of motion device prototype
+=== Automated Mycelium Fruiting Chamber
+asdf
 
+include::portfolio/rock-paper-scissors-avr-assembly-game.adoc[]
 
-== Linux Keyboard-Driven Configuration
+include::portfolio/docker-environments.adoc[]
 
-* **INSERT PROFESSIONAL VIDEO OF LINUX TOUR**
-* Invested in long-term efficiency of context-switching, window management, 
-  code editing, and internet browsing
+include::portfolio/linux-keyboard-driven-configuration.adoc[]
 
-
-== https://github.com/silaswaxter/schedule[Daily Schedule]
-
-* **INSERT IMAGES OF SCHDULE**
-* Implemented docs-as-code and infrastructure-as-code principles
-** Anne Gentle’s “Docs Like Code”
-** Christopher Gales’ “The Product Is Docs”
-* Format and layout information encoded in plain-text configuration files 
-  tracked by version control system
-* Single source of truth for repeated content
-* Uses git, make, docker, asciidoctor, asciidoc, bash scripting, and psutils
-
-
-
+<<<
+include::portfolio/daily-schedule.adoc[]
 

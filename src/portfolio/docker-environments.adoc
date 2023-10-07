@@ -1,0 +1,20 @@
+:project-name: Docker Environments
+:project-duration: March 2022 -- August 2022
+:project-description: Isolate development processes from underlying host \
+operating system by packaging and executing tools in isolated environments.
+include::../template/project-brief.adoc[]
+[cols="<,>"]
+|===
+// TODO
+a| **FIGURE OUT WHAT TO DO. IMAGE?**
+a| 
+[.text-left]
+* Infrastructure as code and single source of truth.
+** Building infrastructure will reduce the time for bringing on new members of
+   a team.
+** Make the docker image extensible such that it can be used by multiple
+   projects
+* Bazel has support for many of the things I was trying to script. Plus more.
+* ANVIL sits "between" the device and the host and provides a single source of
+  truth software package for the development tools.
+|===

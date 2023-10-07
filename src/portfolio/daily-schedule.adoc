@@ -1,0 +1,17 @@
+:project-name: https://github.com/silaswaxter/schedule[Daily Schedule]
+:project-duration: October 2022 -- Current
+:project-description: Create a feedback loop between time planned and time \
+spent. Document thoughts, topics to explores, and tasks as they come to me \
+throughout the day.
+include::../template/project-brief.adoc[]
+[cols="<,>"]
+|===
+a| image::https://raw.githubusercontent.com/silaswaxter/schedule/main/images/printed-booklet-revision-1-first-page.jpg[]
+a|
+[.text-left]
+* Apply docs as code and infrastructure as code principles
+[.text-left]
+** Explore concepts presented by Anne Gentle's, "__Docs Like Code__". 
+* Implement single source of truth by reusing patterned information
+* Strive for separation of concerns by isolating content from style.
+|===

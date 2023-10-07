@@ -1,0 +1,19 @@
+:project-name: Linux Keyboard-Driven Configuration
+:project-duration: July 2020 -- Current
+:project-description: Invest in long-term workflow efficiency by optimizing \
+frequent mini tasks.
+include::../template/project-brief.adoc[]
+[cols="<,>"]
+|===
+//TODO
+a| **INSERT SCREENSHOT. ADD LINK TO VIDEO**
+a| 
+[.text-left]
+* Research and configure software to perform the following actions without
+  leaving the keyboard.
+[.text-left]
+** Open, close, and resize windows
+** Write text
+** Browse the internet
+** Execute commands
+|===
