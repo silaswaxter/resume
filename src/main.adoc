@@ -79,7 +79,7 @@ include::template/project-brief.adoc[]
 :project-description: A custom robotic arm draws with various utensils based \
 on received commands (for junior design)
 include::template/project-brief.adoc[]
-* Implemented a PID motor controller, timer-based encoder driver, PWM motor 
+* Implemented a PID motor controller, timer-based encoder driver, and PWM motor 
   driver
 * Wrote a publish-subscribe interrupt abstraction service allowing drivers to 
   follow separation of concerns
