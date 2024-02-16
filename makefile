@@ -24,7 +24,7 @@ $(build_dir)/$(document_name).pdf: $(src_dir)/main.adoc $(document_src) \
 		-o $@
 
 $(build_dir)/$(document_name).png: $(build_dir)/$(document_name).pdf
-	convert $< $@
+	convert -background white -alpha remove -flatten $< $@
 
 clean:
 	rm -rf $(build_dir)/*
