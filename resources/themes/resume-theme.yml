@@ -9,17 +9,24 @@ base:
   # default alignment for lists is justified which looks gross because spaces
   # noticeably change sizes
   text-align: left
+  line-height: 1.15
+
+prose:
+  margin-bottom: 4
 
 heading:
+  margin-top: 1
+  margin-bottom: 2
+
   h2-font-size: 20
-  h2-margin-bottom: 1
+  # h2-margin-bottom: 1
   h2-text-align: center
 
   h3-font-size: 12
-  h3-margin-bottom: 1
+  # h3-margin-bottom: 1
 
   h4-font-size: 12
-  h4-margin-bottom: 1
+  # h4-margin-bottom: 1
 
 footer:
   # height of 0 removes footer line
@@ -40,11 +47,14 @@ thematic-break:
   border-width: 1
   padding: [1, 0, 0, 1]
 
+link:
+  font-color: #000000
+
 list:
   item-spacing: 0
 
 table:
   border-width: 0
   grid-width: 0
-table-cell:
-  padding: [0.0in, 0.01in]
+  cell:
+    padding: [0.0in, 0.01in]

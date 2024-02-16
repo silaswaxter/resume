@@ -8,7 +8,9 @@ theme_name := resume
 
 document_src := $(shell find $(src_dir)/ -name "*.adoc")
 
-.phony: clean
+.phony: clean all
+
+all: $(build_dir)/$(document_name).pdf $(build_dir)/$(document_name).png
 
 $(build_dir)/$(document_name).pdf: $(src_dir)/main.adoc $(document_src) \
 																	 $(theme_dir)/$(theme_name)-theme.yml
@@ -20,6 +22,9 @@ $(build_dir)/$(document_name).pdf: $(src_dir)/main.adoc $(document_src) \
 		--theme $(theme_name) \
 		$< \
 		-o $@
+
+$(build_dir)/$(document_name).png: $(build_dir)/$(document_name).pdf
+	convert $< $@
 
 clean:
 	rm -rf $(build_dir)/*

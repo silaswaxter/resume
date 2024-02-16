@@ -1,10 +1,7 @@
 //:project-name:
 //:project-duration:
-//:project-description:
-[cols="<,>"]
+[cols="<3,>1"]
 |===
 h| {project-name}
 h| {project-duration}
-
-2+e| {project-description}
 |===

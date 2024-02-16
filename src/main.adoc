@@ -10,95 +10,118 @@ https://github.com/SilasWaxter[github.com/SilasWaxter]
 [.text-left]
 === Education
 '''
-[cols="<,>"]
+[cols="<70,>30"]
 |===
 h| Oregon State University 
 h| June 2024
 
-e| Electrical and Computer Engineering, Bachelor of Science +
-   Computer Science, Minor
-e| GPA: 3.60/4.00
+e| Electrical and Computer Engineering B.S. and Computer Science Minor
+e| GPA: 3.53
 |===
 
 === Skills
 '''
-[cols="15,85"]
+[cols="18,82"]
 |===
 | Software
 | C, C++, Python, Lua, Bash, Git, Gitlab CI, Markdown, Make, Bazel, Docker,
-  Linux, KiCad, Inventor
-
-| Practices
-| Test-Driven Development, Continuous Integration, Docs-as-Code
+  Linux, Vim, SPICE, EDA (KiCAD), CAD (Inventor, OnShape, SolidWorks), MatLab, 
+  GCC
 
 | Tools
-| Logic Analyzer, Oscilloscope, Function Generator, Multimeter
+| Logic Analyzer, Oscilloscope, In-Circuit Debugger/Programmer (JTAG), Electronic 
+  Load
 
-| Peripherals
-| I2C, UART, DMA, Nested Interrupt Vector Controller, GPIO, PWM, Timers
+| Relevant Classes
+| Digital Signal Processing, Control Systems, Advanced Power Electronics (Graduate Level)
+
+//| Peripherals
+//| I2C, UART, DMA, Nested Interrupt Vector Controller, GPIO, PWM, Timers
 |===
 
 === Work Experience
 '''
+:experience-organization-name: PercFab
+:experience-duration: June 2023 -- Sept. 2023
+:experience-job-title: Phone Installation Technician
+:experience-job-location: Tuscon, Arizona
+include::template/experience.adoc[]
+* Gathered call-flow requirements from customers and implemented them with VoIP
+  systems
+
 :experience-organization-name: METER Group Inc
 :experience-duration: June 2022 -- Sept. 2022
 :experience-job-title: Firmware Engineering Intern
 :experience-job-location: Pullman, Washington
 include::template/experience.adoc[]
-* Created a hardware-in-the-loop continuous integration system for the AquaLab3
-  product
-* Wrote a smoke-test for the AquaLab3 HIL CI which exercises the serial firmware 
-  update, a subset of the command-line interface, and checks for expected device
-  state
-* Developed an internal serial-abstraction library for Windows and Unix that 
-  supports python v2.7+
-* Refactored the AquaLab3 CLI documentation ensuring correctness and applying 
-  git styled documentation enabling parsability
+* Created a hardware-in-the-loop (HIL) continuous integration (CI) system for 
+  the AquaLab3 product
+// Score of Bullet Point: 7/10
+* Produced an integration test suite that exercises serial connectivity, 
+  command line interface, firmware update, and humidity/temperature sensors
+// Score of Bullet Point: 6/10
+* Refactored the AquaLab3 command spreadsheet, reporting 8 firmware bugs and 
+  applying git-styled documentation for future parsability
+// Score of Bullet Point: 4/10
+* Developed a Python v2.7+ serial device library that handles handshaking 
+  processes with METER Group Devices
 
 :experience-organization-name: Unimeasure Inc
 :experience-duration: July 2021 -- Sept. 2021
-:experience-job-title: Electro-mechanical Assembly Intern
+:experience-job-title: Electro-Mechanical Assembly Intern
 :experience-job-location: Corvallis, Oregon
 include::template/experience.adoc[]
-* Operated soldering-station, drill-press, and mill to produce components for
-  string linear potentiometers
 
-=== Highlighted Projects
+=== Relevant Projects
 '''
-:project-name: https://hackaday.io/project/175513-range-of-motion-device-prototype[Range of Motion Device]
-:project-duration: August 2018 -- Current
-:project-description: Digitally measure the flexibility of human's joint
-include::template/project-brief.adoc[]
-* Developed a custom Hardware Abstraction Layer for the Arm Cortex M4-based 
-  STM32L4 microcontroller
-* Created a Windows Forms user interface that pairs sensors, shares the 
-  symmetric encryption key, and displays sensors' orientations
-
-:project-name: https://cad.onshape.com/documents/6ce85bad0ae8b58c787d039d/w/dbb51ba1a67891031b16cbac/e/1fd8eec701eb8102974f099d?renderMode=0&uiState=652061af4adcbf5840a34947[SCARA Arm Drawing Robot]
+:project-name: https://cad.onshape.com/documents/6ce85bad0ae8b58c787d039d/w/dbb51ba1a67891031b16cbac/e/1fd8eec701eb8102974f099d?renderMode=0&uiState=652061af4adcbf5840a34947[Drawing SCARA Robotic Arm ]
+//| Junior Design]
 :project-duration: Spring 2023
-:project-description: A custom robotic arm draws with various utensils based \
-on received commands (for junior design)
-include::template/project-brief.adoc[]
-* Implemented a PID motor controller, timer-based encoder driver, and PWM motor 
-  driver
-* Wrote a publish-subscribe interrupt abstraction service allowing drivers to 
+include::template/project.adoc[]
+* Implemented a PID motor controller, timer-based encoder driver, and a PWM 
+  motor driver
+* Wrote a publish-subscribe interrupt abstraction module allowing driver code to
   follow separation of concerns
-* Designed the arm in CAD and created mechanical drawings for fabrication
+* Designed the arm with off-the-shelf components using CAD (OnShape) and produced dimensioned drawings
 
-:project-name: https://www.linkedin.com/posts/silas-waxter_assembly-game-project-activity-7004541275643289600-cbPb?utm_source=share&utm_medium=member_desktop[Rock-Paper-Scissors Game]
+:project-name: Low-Noise Low-Visibility Drone 
+//| Senior Design
+:project-duration: September 2024 -- Current
+include::template/project.adoc[]
+* Designed two buck converters based on TI's LM614 IC that convert the 6S LiPo
+  drone battery (18V to 25.2V) to 5V and 3.3V, respectively
+* Programmed a python script that captures/loads an audio signal and analyzes 
+  its relative power spectral density
+
+:project-name: https://hackaday.io/project/175513-range-of-motion-device-prototype[Range of Motion Device ]
+//| Personal]
+:project-duration: August 2018 -- Current
+include::template/project.adoc[]
+* Wrote a typescript electron app with a 3D interface that displays sensors'
+  orientations and calculates a continuous, multi-revolution axis-angle
+  representation of the sensors' relative rotation.
+* Developed a hardware abstraction layer for STM32L4 (Arm Cortex M4)
+  C which outperforms vendor's
+//* Created a Windows Forms user interface that pairs sensors, shares the 
+//  symmetric encryption key, and displays sensors' orientations
+
+:project-name: https://www.linkedin.com/posts/silas-waxter_assembly-game-project-activity-7004541275643289600-cbPb?utm_source=share&utm_medium=member_desktop[AVR Assembly Rock-Paper-Scissors Game ]
+//| Assembly Class]
 :project-duration: December 2023
-:project-description: An AVR assembly rock-paper-scissors program that runs on \
-two devices 
-include::template/project-brief.adoc[]
-* Architected firmware as finite state machines with synchronized state 
-  transitions via UART communication
-* Configured UART, GPIO, timer peripherals
+include::template/project.adoc[]
+* Architected a finite state machine with synchronized state transitions via 
+  UART
+* Self-taught preprocessor macros to follow "no magic numbers" and "DRY"
+  principles at no performance cost
 
-:project-name: https://hackaday.io/project/175998-automated-mushroom-fruiting-container[Automated Mycelium Fruiting Chamber]
+:project-name: https://hackaday.io/project/175998-automated-mushroom-fruiting-container[Humidity-Regulated Mycelium Fruiting Chamber ]
+//| Personal]
 :project-duration: July 2020 -- Sept. 2020
-:project-description: 
-include::template/project-brief.adoc[]
-* Implemented bang-bang control system to regulate the growing chamber humidity
+include::template/project.adoc[]
+* Implemented bang-bang control system with humidity sensors and an ultrasonic 
+  humidifier
+* Designed and 3D printed a humidifier reservoir with a float switch and solenoid
+  valve to maintain the water level.
 
 <<<
 
