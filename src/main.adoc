@@ -68,7 +68,7 @@ include::template/experience.adoc[]
 
 :experience-organization-name: Unimeasure Inc
 :experience-duration: July 2021 -- Sept. 2021
-:experience-job-title: Electro-Mechanical Assembly Intern
+:experience-job-title: Electro-Mechanical Intern
 :experience-job-location: Corvallis, Oregon
 include::template/experience.adoc[]
 
