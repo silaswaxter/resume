@@ -1,7 +1,14 @@
 //:project-name:
-//:project-duration:
-[cols="<3,>1"]
+// Don't include project duration since it confuses applicant tracking systems
+
 |===
 h| {project-name}
-h| {project-duration}
 |===
+
+
+
+//[cols="<3,>1"]
+//|===
+//h| {project-name}
+//h| {project-duration}
+//|===

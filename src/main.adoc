@@ -12,11 +12,11 @@ https://github.com/SilasWaxter[github.com/SilasWaxter]
 '''
 [cols="<70,>30"]
 |===
-h| Oregon State University 
-h| June 2024
+h| Oregon State University
+h| September 2020 - June 2024
 
-e| Electrical and Computer Engineering B.S. and Computer Science Minor
-e| GPA: 3.53
+e| B.S. in Electrical and Computer Engineering, Minor in Computer Science
+e| GPA 3.53
 |===
 
 === Skills
@@ -26,14 +26,14 @@ e| GPA: 3.53
 | Software
 | C, C++, Python, Lua, Bash, Git, Gitlab CI, Markdown, Make, Bazel, Docker,
   Linux, Vim, SPICE, EDA (KiCAD), CAD (Inventor, OnShape, SolidWorks), MatLab, 
-  GCC
+  GCC,
 
 | Tools
 | Logic Analyzer, Oscilloscope, In-Circuit Debugger/Programmer (JTAG), Electronic 
   Load
 
 | Relevant Classes
-| Digital Signal Processing, Control Systems, Advanced Power Electronics (Graduate Level)
+| Digital Signal Processing, Control Systems, Power Electronics, Computer Architecture
 
 //| Peripherals
 //| I2C, UART, DMA, Nested Interrupt Vector Controller, GPIO, PWM, Timers
@@ -42,15 +42,15 @@ e| GPA: 3.53
 === Work Experience
 '''
 :experience-organization-name: PercFab
-:experience-duration: June 2023 -- Sept. 2023
+:experience-duration: June 2023 - September 2023
 :experience-job-title: Phone Installation Technician
 :experience-job-location: Tuscon, Arizona
 include::template/experience.adoc[]
-* Gathered call-flow requirements from customers and implemented them with VoIP
-  systems
+* Gathered call-flow requirements from customers and realized them in more than
+  5 VoIP systems
 
 :experience-organization-name: METER Group Inc
-:experience-duration: June 2022 -- Sept. 2022
+:experience-duration: June 2022 - September 2022
 :experience-job-title: Firmware Engineering Intern
 :experience-job-location: Pullman, Washington
 include::template/experience.adoc[]
@@ -67,35 +67,42 @@ include::template/experience.adoc[]
   processes with METER Group Devices
 
 :experience-organization-name: Unimeasure Inc
-:experience-duration: July 2021 -- Sept. 2021
+:experience-duration: July 2021 - September 2021
 :experience-job-title: Electro-Mechanical Intern
 :experience-job-location: Corvallis, Oregon
 include::template/experience.adoc[]
+// * Found and implemented solutions to minimize manufacturing costs
+// * Practiced quality of control procedures
+// * Constructed products and sub-assemblies by soldering, drilling with jigs, 
+//   calibrating, etc.
 
-=== Relevant Projects
+=== Project Experience
 '''
 :project-name: https://cad.onshape.com/documents/6ce85bad0ae8b58c787d039d/w/dbb51ba1a67891031b16cbac/e/1fd8eec701eb8102974f099d?renderMode=0&uiState=652061af4adcbf5840a34947[Drawing SCARA Robotic Arm ]
 //| Junior Design]
-:project-duration: Spring 2023
+//:project-duration: Spring 2023
 include::template/project.adoc[]
 * Implemented a PID motor controller, timer-based encoder driver, and a PWM 
   motor driver
 * Wrote a publish-subscribe interrupt abstraction module allowing driver code to
   follow separation of concerns
-* Designed the arm with off-the-shelf components using CAD (OnShape) and produced dimensioned drawings
+* Drafted 19 dimensional drawings enabling arm construction from off-the-shelf 
+  parts
 
 :project-name: Low-Noise Low-Visibility Drone 
 //| Senior Design
-:project-duration: September 2024 -- Current
+//:project-duration: September 2024 - Current
 include::template/project.adoc[]
-* Designed two buck converters based on TI's LM614 IC that convert the 6S LiPo
-  drone battery (18V to 25.2V) to 5V and 3.3V, respectively
+* Made two buck converters, 30W and 50W, that steps-down a 6S LiPo battery (18V
+  to 25V) to 3.3V and 5V
 * Programmed a python script that captures/loads an audio signal and analyzes 
   its relative power spectral density
+* Formulated a control system for noise canceling that was instantiated on
+  an FPGA via SystemVerilog
 
 :project-name: https://hackaday.io/project/175513-range-of-motion-device-prototype[Range of Motion Device ]
 //| Personal]
-:project-duration: August 2018 -- Current
+//:project-duration: August 2018 - Current
 include::template/project.adoc[]
 * Wrote a typescript electron app with a 3D interface that displays sensors'
   orientations and calculates a continuous, multi-revolution axis-angle
@@ -107,21 +114,21 @@ include::template/project.adoc[]
 
 :project-name: https://www.linkedin.com/posts/silas-waxter_assembly-game-project-activity-7004541275643289600-cbPb?utm_source=share&utm_medium=member_desktop[AVR Assembly Rock-Paper-Scissors Game ]
 //| Assembly Class]
-:project-duration: December 2023
+//:project-duration: December 2023
 include::template/project.adoc[]
 * Architected a finite state machine with synchronized state transitions via 
   UART
 * Self-taught preprocessor macros to follow "no magic numbers" and "DRY"
   principles at no performance cost
 
-:project-name: https://hackaday.io/project/175998-automated-mushroom-fruiting-container[Humidity-Regulated Mycelium Fruiting Chamber ]
+:project-name: https://hackaday.io/project/175998-automated-mushroom-fruiting-container[Humidity Controlled Mushroom Fruiting Chamber ]
 //| Personal]
-:project-duration: July 2020 -- Sept. 2020
+//:project-duration: July 2020 - September 2020
 include::template/project.adoc[]
-* Implemented bang-bang control system with humidity sensors and an ultrasonic 
-  humidifier
+* Applied bang-bang control via sensors and an ultrasonic humidifier resulting 
+  in +/-1% steady-state error.
 * Designed and 3D printed a humidifier reservoir with a float switch and solenoid
-  valve to maintain the water level.
+  valve to maintain the water level
 
 <<<
 
